@@ -5,6 +5,7 @@ import { MessageCirclePlus } from "lucide-react";
 import { Home, FileText, LogOut } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -40,7 +41,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <span className="sr-only">Open user menu</span>
-              <img
+              <Image
                 className="w-8 h-8 rounded-full"
                 src="/docs/images/people/profile-picture-3.jpg"
                 alt="user photo"

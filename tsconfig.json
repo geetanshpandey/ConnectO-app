@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["react", "react-dom", "react-scripts", "react-beautiful-dnd"],
+    "types": ["react", "react-dom", "react-beautiful-dnd"],
     "allowSyntheticDefaultImports": true,
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],

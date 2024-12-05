@@ -1,14 +1,12 @@
 
 "use client";
 import React, { useState } from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"; // shadcn Card components
-import { Plus } from "lucide-react";
 import Sidebar from "@/components/main/sidebar";
-import { Home, FileText, LogOut } from "lucide-react";
+import { LogOut } from "lucide-react";
 import Link from "next/link";
 import { Acme, Archivo_Black, Caveat, Bowlby_One } from 'next/font/google';
 import { Skeleton } from "@/components/ui/skeleton";
-import BarChart from "@/components/main/charts/barchart";
+import Image from "next/image";
 
 const acme = Acme({ subsets: ['latin'], weight: ['400'] });
 const archivoBlack = Archivo_Black({ subsets: ['latin'], weight: ['400'] });
@@ -55,7 +53,7 @@ const RecordingLayout: React.FC = () => {
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <span className="sr-only">Open user menu</span>
-              <img
+              <Image
                 className="w-8 h-8 rounded-full"
                 src="/docs/images/people/profile-picture-3.jpg"
                 alt="user photo"

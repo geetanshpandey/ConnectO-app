@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button"; // Using shadcn button
 import { cn } from "@/lib/utils"; // Utility for class merging
 import { Acme, Archivo_Black, Caveat, Bowlby_One } from 'next/font/google';
+import Image from "next/image";
 
 const acme = Acme({ subsets: ['latin'], weight: ['400'] });
 const archivoBlack = Archivo_Black({ subsets: ['latin'], weight: ['400'] });
@@ -21,7 +22,7 @@ const MeetingSetup: React.FC = () => {
 
         {/* Image Section */}
         <div className="relative w-11/12 md:w-[90%] h-[60vh] bg-white rounded-lg shadow-lg overflow-hidden">
-          <img
+          <Image
             src="https://source.unsplash.com/800x600/?conference,technology"
             alt="Meeting Setup"
             className="w-full h-full object-cover"
